@@ -1,0 +1,14 @@
+.toolbar {
+    background-color: #000000;
+    color: #000000;
+}
+
+.btn {
+    justify-content: flex-end;
+}
+
+.content {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

@@ -30,3 +30,49 @@
     transform: rotate(360deg);
   }
 }
+
+.back {
+    background-image: linear-gradient(#151718, #554852);
+}
+
+.colorLight {
+    background-color: #FBFAFA;
+}
+
+.colorLightAccent {
+    background-color: #938588;
+}
+
+.colorDark {
+    background-color: #3A5D56;
+}
+
+.colorDarkAccent {
+    background-color: #7F7A89;
+}
+
+.colorComp {
+    background-color: #9D9DA7;
+}
+
+.compColor {
+    color: #3A5D56;
+}
+
+.black {
+    background-color: #19180A;
+}
+
+.txtfont {
+    color: #969696;
+}
+
+.mainfont {
+    color: #E8E8E8;
+}
+
+.box {
+
+}
+
+/*transform-origin: 50% 50%;*/
