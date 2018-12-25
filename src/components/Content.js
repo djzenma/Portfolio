@@ -5,6 +5,7 @@ import aucImg from '../resources/AUC Library.jpg'
 import topfferImg from '../resources/Topffer.jpg'
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 const education = [
@@ -48,7 +49,15 @@ class Content extends React.Component {
         const workExp = work.map((exp, index) => {
             return (
                 <div key={index} className="p-4">
-                    <p className="h4"><span className="compColor">{exp.title}</span></p>
+                    <div className="row">
+                        <div>
+                            <FontAwesomeIcon className="text-dark"
+                                              icon={['fas', 'certificate']} size="lg" style={{height: 2 + "rem"}}/>
+                        </div>
+                        <div className="col-10">
+                            <p className="h4"><span className="compColor">{exp.title}</span></p>
+                        </div>
+                    </div>
                     <p className="lead"><span className="compColor">{exp.desc}</span></p>
                 </div>
             );
