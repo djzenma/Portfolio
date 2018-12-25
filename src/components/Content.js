@@ -1,7 +1,7 @@
 import React from "react"
 import "./Styles.css"
 import MediaItem from "./MediaItem"
-import aucImg from '../resources/AUC.jpg'
+import aucImg from '../resources/AUC Library.jpg'
 import topfferImg from '../resources/Topffer.jpg'
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
@@ -24,8 +24,8 @@ const work = [
     {'title': 'Software Engineer at the American University in Cairo’s Library (October/2018-present).',
         'desc' : 'Developing an Android and Web App correcting dirty OCR outputs. This app is contributing to the AUC’s project of Digitizing 3000 Arabic books.'
     },
-    {'title': 'Teaching Assistant in the American University in Cairo (September/2018-present).',
-        'desc': 'Helping students doing their experiments in the Computer Engineering course Digital Logic Design lab.'
+    {'title': 'Teaching Assistant in the American University in Cairo (September/2018-December/2018).',
+        'desc': 'Helped students doing their experiments in the Computer Engineering course Digital Logic Design lab.'
     }
 ];
 
@@ -37,6 +37,7 @@ class Content extends React.Component {
 
     render() {
         const {tabs} = this.props;
+        const {background} = this.props;
 
         const edu = education.map((ed) => {
             return (
@@ -62,9 +63,9 @@ class Content extends React.Component {
         }
 
         return (
-           <div className="colorDark">
+           <div className={background + " p-5"}>
                <div className="container">
-                   <div className="card colorLight">
+                   {/*<div className="card bg-transparent">*/}
                        <div className="card-body">
                            <div className="card" id={tabs[0]}>
                                <div className="card-header">
@@ -83,7 +84,7 @@ class Content extends React.Component {
                                </div>
                            </div>  {/* Work Experience Card */}
                        </div>  {/* Content Card Body */}
-                   </div> {/* Whole Content Card */}
+                   {/*</div> /!* Whole Content Card *!/*/}
                </div> {/* Content Container */}
            </div>
         );

@@ -1,19 +1,10 @@
 import React from "react"
 import "./Styles.css"
-import {
-    Collapse, DropdownItem,
-    DropdownMenu, DropdownToggle,
-    Jumbotron,
-    Nav, Navbar,
-    NavbarBrand,
-    NavbarToggler,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown
-} from "reactstrap"
+import { Jumbotron } from "reactstrap"
 import Tabs from "@material-ui/core/Tabs/Tabs";
 import Tab from "@material-ui/core/Tab/Tab";
 import Paper from "@material-ui/core/Paper/Paper";
+import myPhoto from '../resources/myImg.jpg'
 
 class Header extends React.Component {
     constructor(props) {
@@ -29,6 +20,7 @@ class Header extends React.Component {
 
     render() {
         const {navLinks} = this.props;
+        const {background} = this.props;
         const labels = navLinks.map( (label) => {
                 return (
                     <Tab className="text-light" label={label} href={"#" + label}/>
@@ -37,12 +29,14 @@ class Header extends React.Component {
         );
 
         return (
-            <div className="black">
-                <Jumbotron className="bg-transparent mb-0 rounded-0">
+            <div className={background}>
+                <Jumbotron className="bg-transparent mb-0 rounded-0 text-center">
+                    <img src={myPhoto} alt="My Photo" className="rounded-circle border border-light"
+                         style={{height: 15 + 'rem', width: 15 + 'rem'}}/>
                     <h1 className="display-3 mainfont">Mazen Amr</h1>
-                    <p className="lead txtfont">Welcome to my official website!</p>
+                    <p className="lead txtfont">Computer Engineer</p>
                 </Jumbotron>
-                <div className="colorDark">
+                <div className={background}>
                     <Paper className="bg-transparent mt-0 rounded-0">
                         <Tabs
                             style={{flexGrow: 1}}

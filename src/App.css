@@ -31,10 +31,6 @@
   }
 }
 
-.back {
-    background-image: linear-gradient(#151718, #554852);
-}
-
 .colorLight {
     background-color: #FBFAFA;
 }
@@ -51,6 +47,8 @@
     background-color: #7F7A89;
 }
 
+
+
 .colorComp {
     background-color: #9D9DA7;
 }
@@ -64,15 +62,26 @@
 }
 
 .txtfont {
-    color: #969696;
+    color: #e6e6e6;
 }
 
 .mainfont {
     color: #E8E8E8;
 }
 
+.back {
+    background: linear-gradient(rgba(25,24,10,0.4), rgba(25,24,10, 1)), url("./resources/background4.jpg") no-repeat fixed;
+    background-size: 100%;
+}
+.layer {
+    background-image: linear-gradient(rgb(188,74, 104), rgb(188,74,104));
+}
 .box {
 
+}
+
+.borderRadius {
+    border-width: 4rem;
 }
 
 /*transform-origin: 50% 50%;*/

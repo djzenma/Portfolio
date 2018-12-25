@@ -15,8 +15,8 @@ class MediaItem extends React.Component {
         return (
             <Media className="mt-4 compColor">
                 <Media left>
-                    <Media object src={imgSrc} alt={imgAlt} className="img-fluid rounded-circle mr-3"
-                           style={{height: 150 + 'px', width: 200 + 'px'}}/>
+                    <Media object src={imgSrc} alt={imgAlt} className="img-fluid mr-3 rounded-circle"
+                           style={{height: 150 + 'px', width: 150 + 'px'}}/>
                 </Media>
                 <Media body>
                     <Media heading>
